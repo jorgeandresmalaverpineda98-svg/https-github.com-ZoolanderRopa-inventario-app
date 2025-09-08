@@ -1,12 +1,21 @@
-src/
-│   ├── abstractfactory/
-│   ├── builder/
-│   ├── factorymethod/
-│   ├── prototype/
-│   ├── singleton/
-│   └── main/
- test/
-│   └── pruebas unitarias
-  README.md
-   DiagramaClases.pdf
-    DocumentacionTecnica.pdf
+zoolander-inventory/
+├─ README.md
+├─ src/
+│  ├─ main/
+│  │  ├─ java/
+│  │  │  ├─ app/Main.java
+│  │  │  ├─ model/Product.java
+│  │  │  ├─ builder/...
+│  │  │  ├─ factory/...
+│  │  │  ├─ prototype/...
+│  │  │  ├─ inventory/InventoryManager.java
+│  ├─ test/
+│  │  ├─ java/
+│  │  │  ├─ InventoryManagerTest.java
+│  │  │  ├─ PrototypeTest.java
+├─ docs/
+│  ├─ UML.png
+│  ├─ evidencia_repo_screenshot.png
+├─ pdf/
+│  ├─ Informe_Zoolander.pdf  (a generar)
+└─ .gitignore
