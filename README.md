@@ -9,7 +9,7 @@
 Aplicación Java para gestión de inventarios que implementa patrones creacionales: Abstract Factory, Builder, Factory Method, Prototype y Singleton.
 
 ## Cómo ejecutar
-1. Importar el proyecto en Visual studio code como Maven/Gradle (o simplemente compilar con javac).
+1. Importar el proyecto en Visual studio code.
 2. Ejecutar `app.Main`.
 3. Ejecutar tests con `mvn test` o desde el IDE.
 
