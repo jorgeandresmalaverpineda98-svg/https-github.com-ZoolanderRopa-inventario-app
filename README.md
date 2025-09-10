@@ -56,6 +56,13 @@ public class Inventario {
         productos.add(p);
     }
 }
+// Ejemplo resumido de patrón Prototype
+public abstract class Producto implements Cloneable {
+    private String nombre;
+    private double precio;
+    private int stock;
+    ...
+}
 
 
 
