@@ -17,7 +17,7 @@ Aplicación Java para gestión de inventarios que implementa patrones creacional
 (https-github.com-ZoolanderRopa-inventario-app)
 
 ## Evidencia
-// Ejemplo resumido de patrón Prototype
+Ejemplo resumido de patrón Prototype
 public abstract class Producto implements Cloneable {
     private String nombre;
     private double precio;
