@@ -61,8 +61,9 @@ public abstract class Producto implements Cloneable {
     private String nombre;
     private double precio;
     private int stock;
-    ...
-}
+
+
+
 
 
 
