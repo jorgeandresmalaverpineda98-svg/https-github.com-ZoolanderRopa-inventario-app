@@ -17,50 +17,18 @@ Aplicación Java para gestión de inventarios que implementa patrones creacional
 (https-github.com-ZoolanderRopa-inventario-app)
 
 ## Evidencia
-Ejemplo resumido de patrón Prototype
-public abstract class Producto implements Cloneable {
-    private String nombre;
-    private double precio;
-    private int stock;
-
-    public Producto(String nombre, double precio, int stock) {
-        this.nombre = nombre;
-        this.precio = precio;
-        this.stock = stock;
-    }
-
-    public Producto clonar() {
-        try {
-            return (Producto) super.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new RuntimeException("Error al clonar producto", e);
-        }
-    }
-}
-
-// Uso del Singleton para gestión de inventario
-public class Inventario {
-    private static Inventario instancia;
-    private List<Producto> productos = new ArrayList<>();
-
-    private Inventario() {}
-
-    public static Inventario getInstancia() {
-        if (instancia == null) {
-            instancia = new Inventario();
-        }
-        return instancia;
-    }
-
-    public void agregarProducto(Producto p) {
-        productos.add(p);
-    }
-}
-// Ejemplo resumido de patrón Prototype
-public abstract class Producto implements Cloneable {
-    private String nombre;
-    private double precio;
-    private int stock;
+1. Creación del Repositorio
+Se creó un repositorio en GitHub con el nombre asignado al proyecto. En este paso se inicializó con un archivo README.md para establecer la base del repositorio.
+<img width="900" height="273" alt="image" src="https://github.com/user-attachments/assets/2091e66b-d3e1-42fa-901f-a9030120cfbe" />
+2. Configuración Local
+Cada integrante clonó el repositorio y configuró su nombre y correo electrónico para que los commits queden asociados a cada colaborador.
+<img width="985" height="213" alt="image" src="https://github.com/user-attachments/assets/a1edabe6-d740-4066-833f-7d0f779fe12f" />
+3. Commits Individuales
+Cada integrante realizó un commit con la implementación de un patrón creacional específico en un archivo distinto. De esta manera, se evidencia la contribución individual de cada miembro.
+<img width="534" height="320" alt="image" src="https://github.com/user-attachments/assets/e742c5fa-10aa-4db0-8112-b7882c58e68e" />
+4. Commits Colaborativos
+Se creó una rama secundaria para realizar modificaciones conjuntas en el archivo README.md. Posteriormente, se abrió un Pull Request que fue revisado y aprobado por otro integrante del equipo, para luego ser integrado a la rama principal. 
+<img width="770" height="337" alt="image" src="https://github.com/user-attachments/assets/2734ba56-c377-4ab7-b09d-858bb63f60d3" />
 
 
 
