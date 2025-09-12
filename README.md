@@ -57,6 +57,7 @@ package productos;
 
 import patrones.prototype.PrototipoProducto;
 
+
 public class ProductoRopa implements PrototipoProducto {
     private String nombre;
     private double precio;
@@ -84,8 +85,12 @@ public class ProductoRopa implements PrototipoProducto {
         return "Producto Ropa: " + nombre + " | Talla: " + talla + " | Color: " + color +
                " | Material: " + material + " | Precio: $" + precio + " | Cantidad: " + cantidad;
     }
+
+    
+ 
     Ejemplo de Singleton Inventario.java
 }
+
 package inventario;
 
 import java.util.HashMap;
