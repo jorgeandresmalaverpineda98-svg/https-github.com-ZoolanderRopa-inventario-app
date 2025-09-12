@@ -1,20 +1,43 @@
-# Zoolander - Inventory Management (Java)
+# 🧵 Zoolander Ropa – Sistema de Inventario con Patrones Creacionales
 
 ## Integrantes
 - Dayron Arley Moreno Cifuentes - Dayron-moreno@upc.edu.co
 - Jorge Andrés Malaver Pineda - Jorge-malaver@upc.edu.co
 - Diego David Montoya Niño  - Diego-montoya1@upc.edu.co
 
-## Resumen
-Aplicación Java para gestión de inventarios que implementa patrones creacionales: Abstract Factory, Builder, Factory Method, Prototype y Singleton.
+Este proyecto corresponde a la actividad **(Proyecto Transversal / Fase I)** de la asignatura *Fundamentos de Ingeniería y Sistemas Informáticos*.  
+Se desarrolla una aplicación en **Java** para la gestión de inventarios de la empresa **Zoolander Ropa**, aplicando patrones creacionales de diseño.
 
-## Cómo ejecutar
-1. Importar el proyecto en Visual studio code.
-2. Ejecutar `app.Main`.
-3. Ejecutar tests con `mvn test` o desde el IDE.
+---
 
-## Enlace del repositorio
-(https-github.com-ZoolanderRopa-inventario-app)
+## 🚀 Funcionalidades
+- Crear **categorías de ropa** (Camisas, Pantalones, Zapatos, Accesorios).
+- Definir **atributos específicos** de cada categoría (ej: talla, material, color).
+- Crear **productos de ropa** dentro de categorías.
+- **Clonar productos** para agilizar la creación de nuevas prendas.
+- Consultar y actualizar el **inventario** (entradas y salidas de stock).
+- Gestión centralizada con un **Singleton** para el inventario.
+
+---
+
+## 📌 Patrones Creacionales Implementados
+- **Abstract Factory** → creación de categorías y productos de ropa.  
+- **Builder** → construcción paso a paso de productos con atributos de moda.  
+- **Factory Method** → creación de productos por tipo (camisa, pantalón, zapato).  
+- **Prototype** → clonación de productos ya existentes.  
+- **Singleton** → una única instancia del inventario de Zoolander Ropa.  
+
+---
+
+## 🛠️ Tecnologías
+- Lenguaje: **Java**
+- Dependencias: **Visual Studio Code** 
+- Control de versiones:  **Git & GitHub**  
+
+---
+
+## 📂 Estructura del Proyecto
+
 
 ## Evidencia
 1. Creación del Repositorio
