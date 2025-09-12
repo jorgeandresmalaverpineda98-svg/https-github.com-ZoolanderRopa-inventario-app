@@ -52,7 +52,7 @@ Cada integrante realizó un commit con la implementación de un patrón creacion
 4. Commits Colaborativos
 Se creó una rama secundaria para realizar modificaciones conjuntas en el archivo README.md. Posteriormente, se abrió un Pull Request que fue revisado y aprobado por otro integrante del equipo, para luego ser integrado a la rama principal. 
 <img width="770" height="337" alt="image" src="https://github.com/user-attachments/assets/2734ba56-c377-4ab7-b09d-858bb63f60d3" />
-
+Ejemplo de Clase ProductoRopa.java
 package productos;
 
 import patrones.prototype.PrototipoProducto;
@@ -84,6 +84,7 @@ public class ProductoRopa implements PrototipoProducto {
         return "Producto Ropa: " + nombre + " | Talla: " + talla + " | Color: " + color +
                " | Material: " + material + " | Precio: $" + precio + " | Cantidad: " + cantidad;
     }
+    Ejemplo de Singleton Inventario.java
 }
 package inventario;
 
