@@ -53,6 +53,67 @@ Cada integrante realizó un commit con la implementación de un patrón creacion
 Se creó una rama secundaria para realizar modificaciones conjuntas en el archivo README.md. Posteriormente, se abrió un Pull Request que fue revisado y aprobado por otro integrante del equipo, para luego ser integrado a la rama principal. 
 <img width="770" height="337" alt="image" src="https://github.com/user-attachments/assets/2734ba56-c377-4ab7-b09d-858bb63f60d3" />
 
+package productos;
+
+import patrones.prototype.PrototipoProducto;
+
+public class ProductoRopa implements PrototipoProducto {
+    private String nombre;
+    private double precio;
+    private int cantidad;
+    private String talla;
+    private String material;
+    private String color;
+
+    public ProductoRopa(String nombre, double precio, int cantidad, String talla, String material, String color) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+        this.talla = talla;
+        this.material = material;
+        this.color = color;
+    }
+
+    @Override
+    public ProductoRopa clonar() {
+        return new ProductoRopa(nombre, precio, cantidad, talla, material, color);
+    }
+
+    @Override
+    public String toString() {
+        return "Producto Ropa: " + nombre + " | Talla: " + talla + " | Color: " + color +
+               " | Material: " + material + " | Precio: $" + precio + " | Cantidad: " + cantidad;
+    }
+}
+package inventario;
+
+import java.util.HashMap;
+import java.util.Map;
+import productos.ProductoRopa;
+
+public class Inventario {
+    private static Inventario instancia;
+    private Map<String, ProductoRopa> productos;
+
+    private Inventario() {
+        productos = new HashMap<>();
+    }
+
+    public static Inventario getInstancia() {
+        if (instancia == null) {
+            instancia = new Inventario();
+        }
+        return instancia;
+    }
+
+    public void agregarProducto(ProductoRopa producto) {
+        productos.put(producto.toString(), producto);
+    }
+
+    public void mostrarInventario() {
+        productos.values().forEach(System.out::println);
+    }
+}
 
 
 
